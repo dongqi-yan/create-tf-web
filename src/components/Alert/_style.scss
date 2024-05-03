@@ -1,0 +1,31 @@
+// 'success' | 'info' | 'warning' | 'error'
+.ry-alert {
+  padding: 8px 15px;
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.ry-alert-close {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.ry-alert-success {
+  @include alert-style($primary, $white, $primary)
+}
+
+.ry-alert-info {
+  @include alert-style($info, $white, $info)
+}
+
+.ry-alert-warning {
+  @include alert-style($warning, $dark, $warning)
+}
+
+.ry-alert-error {
+  @include alert-style($danger, $white, $danger)
+}
